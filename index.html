@@ -1,0 +1,549 @@
+<!doctype html>
+
+<html lang="ro">
+
+<head>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Alesia Rațiu">
+  <meta name="keywords" content="restaurant, mâncare, apetit">
+  <meta name="description" content="Aceasta este site-ul restaurantului nostru, care vă prezintă meniul complex, specific mai multor bucătării europene și
+  câteva informații despre povestea noastră și despre modul în care a luat naștere restaurantul. 
+  Vă invităm cu mare drag să ne fiți alături într-o călătorie culinară de neuitat!">
+
+  <title>A P E T I T</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+
+
+  <style>
+    footer {
+      background-color: gray;
+      color: black;
+      text-align: center;
+      padding: 20px;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+    }
+
+    div ul {
+      display: flex;
+      list-style-type: none;
+      text-decoration:none;
+      align-items: center;
+      padding: 0;
+
+
+    }
+
+    div li {
+      align-items: center;
+      margin-bottom: 20px;
+      list-style-type: none;
+      text-decoration: none;
+
+    }
+
+    .acordeon {
+
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+
+
+
+    .despre {
+      display: flex;
+      margin-left: 20%;
+      font-size: 4rem;
+      margin-top: 5%;
+
+    }
+
+
+    .coloane-contact {
+      display: flex;
+      width: 50%;
+      margin: 60px;
+      background: #004052;
+      height: 600px;
+      text-align: center;
+    }
+
+    .imagine-contact {
+      height: auto;
+      width: 80%;
+      object-fit: contain;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 10%;
+      margin-right: 10%;
+
+
+    }
+
+    body {
+      background-color: #ccc5b9;
+    }
+
+    .carduri-meniu {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      height: fit-content;
+      flex: 1;
+      border: 2px solid black;
+      width: auto;
+
+    }
+
+    .subtitlu {
+      size: 20px;
+      text-align: center;
+      margin-top: 5%;
+      font-size: 3rem;
+     
+
+    }
+
+    .rezerva {
+      display: flex;
+      align-content: center;
+      align-self: center;
+      justify-content: center;
+      background-color: #89b0ae;
+      width: 80%;
+      height: auto;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 5%;
+      border: 2px solid #fcf8f3;
+    }
+
+
+
+    .accordion-body {
+      font-size: 20px;
+    }
+
+
+    .meniu {
+      text-align: center;
+      margin-top: 5%;
+      font-size: 4rem;
+      border-radius: 10%;
+    }
+
+
+
+    .instagram {
+      font-size: 20px;
+    }
+
+    .btn {
+      margin-left: 45%;
+    }
+
+    h1{
+      color: antiquewhite;
+      text-align: center;
+    }
+    .buline{
+      list-style-type: none;
+    }
+    h4{
+      text-align: center;
+      margin-top: 15px;
+    }
+
+ 
+  </style>
+
+</head>
+
+
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="logo.jpg" alt="Logo-ul restaurantului cu o furculiță și un cușit încrusișate" width="30" height="24"
+          class="d-inline-block align-text-top"> A P E T I T </a>
+    </div>
+   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Acasă <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#despre">Despre</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Meniu">Meniu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Rezervă acum">Rezervări</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="poza-restaurant-taiata.jpg" class="d-block w-100"
+          alt="o poza dintr-o locație a unui restaurant, cu o sală spațioasă și luminoasă, în culori neutre, cu câțiva oameni în fundal">
+      </div>
+      <div class="carousel-item">
+        <img src="avo-toast.jpg" class="d-block w-100"
+          alt="un toast de avocado cu condimente, un ou poșat și frunze de baby spanac, pe o farfurie și un fundal alb">
+      </div>
+      <div class="carousel-item">
+        <img src="insta.jpg" class="d-block w-100"
+          alt="cineva face o poză cu telefonul la un fel de mâncare de la un restaurant, înainte de a-l servi">
+      </div>
+      <div class="carousel-item">
+        <img src="desert2.jpg" class="d-block w-100"
+          alt="un desert în straturi, cu blat de biscuite, la mijloc are cremă de brânză și deasupra glazură de ciocolată, pe o farfurie albă">
+      </div>
+      <div class="carousel-item">
+        <img src="open.jpg" class="d-block w-100"
+          alt="plăcuță pe care scrie Open, agățată pe ușa unui local, pe un fundal albastru">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<h1>A P E T I T</h1>
+
+  <h2 id="despre" class="despre">Despre noi </h2>
+
+  <div class="acordeon">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            <strong>Cum a început povestea noastră</strong>
+          </button>
+        </h3>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+
+            Bine ați venit la "Apetit", locul unde fiecare farfurie spune o poveste și fiecare masă este o călătorie
+            culinară. Fondat în 2009 de către perechea pasionată de bucătărie, Alin și Monalisa, restaurantul nostru are
+            la bază o istorie de dragoste pentru gastronomie și o dorință de a oferi o experiență culinară memorabilă.
+            Pasiunea pentru gastronomie nu este doar o afacere pentru noi, ci o moștenire familială. Rețetele noastre se
+            transmit din generație în generație, fiecare bucată de savoare reprezentând amintiri ale unor cine festive
+            și momente de bucurie în familie.
+            Călătoriile noastre prin diverse colțuri ale lumii au fost sursa noastră de inspirație. De la străzile
+            aglomerate din Bangkok, până la piețele pline de culoare din Marrakech, am adus arome autentice și tehnici
+            culinare variate în inima orașului nostru.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <strong>Evoluția restaurantului</strong>
+          </button>
+        </h3>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Dezvoltarea</strong> Cu o bucătărie mică, o echipă dedicată și o listă de preparate pregătite cu
+            grijă, am început să ne construim reputația în comunitatea noastră locală. Oamenii au început să descopere
+            gusturi autentice și combinații de arome pe care nu le-au mai întâlnit înainte.
+            Feedback-ul oaspeților noștri a fost o sursă de inspirație continuă. Am ascultat cu atenție, am adaptat
+            meniul nostru în funcție de preferințele lor și am investit în dezvoltarea personalului nostru pentru a
+            oferi un serviciu ireproșabil. Fiecare comentariu a fost un pas înainte spre perfecțiune.
+            Cu trecerea timpului, cererea pentru experiența noastră culinară unică a crescut rapid. Ne-am hotărât să ne
+            extindem și să investim într-o renovare care să reflecte mai bine identitatea noastră. Am creat un ambient
+            primitor și modern, în care oamenii să se simtă relaxați și să se bucure de fiecare masă.
+            Suntem mândri să fim parte a comunității noastre și credem în retribuire. Am inițiat programe locale,
+            colaborări cu producătorii locali și evenimente caritabile pentru a contribui la binele comun. Comunitatea
+            noastră a devenit parte din familia noastră, iar noi suntem recunoscători pentru această legătură puternică.
+            Cu bucurie am primit recunoașteri pentru excelență culinară și servicii impecabile. Cu toate acestea, suntem
+            conștienți că evoluția noastră este un proces continuu. Ne propunem să rămânem fideli valorilor noastre, să
+            inovăm în permanență și să aducem mereu ceva nou și captivant în farfurie.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <strong> Echipa noastră </strong>
+          </button>
+        </h3>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            
+
+            În inima bucătăriei noastre se află o echipă de bucătari talentați și creativi, care transformă ingrediente
+            obișnuite în opere de artă gastronomică. De la maestri în prepararea cărnurilor la magicieni ai
+            deserturilor, fiecare bucătar aduce o contribuție unică la diversitatea și gustul distinctiv al meniului
+            nostru.
+            Echipa noastră de ospătari și ospătare nu oferă doar servicii impecabile, ci și caldura și zâmbetul autentic
+            care fac fiecare vizită memorabilă. Fiecare ospătar înțelege importanța detaliilor și se străduiește să
+            creeze o atmosferă primitoare și plăcută pentru oaspeți.
+            Suntem mândri să avem o echipă diversă, alcătuită din oameni cu experiențe și tradiții culinare variate.
+            Această diversitate este ceea ce ne face unici și ne oferă o perspectivă bogată asupra bucătăriei și a
+            serviciului.
+            Într-o industrie în continuă schimbare, promovăm învățarea continuă și dezvoltarea personală. Organizăm
+            ședințe de training, workshop-uri și colaborăm cu experți în industrie pentru a asigura că echipa noastră
+            este mereu la curent cu cele mai noi tendințe și tehnici culinare.
+            Suntem mai mult decât o echipă - suntem o familie. Împărtășim bucuriile și provocările, ne susținem reciproc
+            și lucrăm împreună pentru a oferi o experiență de neegalat clienților noștri. În fiecare zi, construim nu
+            doar un restaurant, ci o comunitate legată de aceeași pasiune și dedicare.
+            Nu am ajuns aici doar cu bucate delicioase, ci și cu o echipă incredibilă. Mulțumim fiecărui membru al
+            echipei restaurantului nostru pentru contribuția lor adusă la povestea noastră și pentru pasiunea lor
+            continuă pentru gastronomie.
+            Echipa noastră nu este doar inima și sufletul restaurantului "Apetit", ci și motorul care ne propulsează în
+            viitor. Suntem recunoscători să avem o astfel de echipă extraordinară și așteptăm cu nerăbdare să împărtășim
+            împreună și mai multe reușite și aventuri culinare!
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <h2 id="Meniu" class="meniu"> Meniu</h2>
+
+  <div class="carduri-meniu">
+    <div class="container mt-4">
+      <div class="row">
+        
+        <div class="col-md-3">
+          <div class="card">
+            <img src="cocktail.jpg" class="card-img-top"
+              alt="un pahar înalt și transparent, dintr-o sticlă pe care s-a făcut condens din cauza gheții din limonada care este în pahar, cu o lămaie lângă pe o masă din lemn ">
+            <div class="card-body">
+              <h3 class="card-title">Băuturi</h3>             
+              <p>Limonadă clasică.....15lei</p>
+              <p>Smoothie cu fructe de pădure.....20lei </p>              
+              <p> Ceai de mentă servit cu miere.....14lei </p>
+              <p>Ciocolată caldă cu lapte de migdale.....18lei</p>
+              <p> Cappuccino/Latte (boabe neprăjite)......15lei </p>
+              <p> Virgin Mojito: Mentă, zahăr, suc de lime, .....25lei </p>              
+              <P>Cuba Libre.....18lei</P>
+              <P>Sucuri naturale.....20lei</P>
+              <P>Piña Colada.....30lei</P>
+
+
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="col-md-3">
+          <div class="card">
+            <img src="photo-1504738165310-a8d01a22fbbd.jpg" class="card-img-top"
+              alt="un fundal roșu pe care se află un bol de aceeași nuanță de roșu, în care cineva toarnă o compozițtie lichidă, dar cremoasă de culoare verde">
+            <div class="card-body">
+              <h3 class="card-title">Supe</h3>
+              <p class="card-text">Supă de legume.....20lei</p>
+              <p>Supă de roșii cu busuioc.....25lei</p>
+              <p>Supă de conopidă.....20lei </p>
+              <p> Supă de Linte cu Curry.....35lei </p>
+              <p> Supă de Mazăre și Mentă.....30lei </p>
+              <p> Supă de Căpșuni și Busuioc.....15lei </p>
+              <p>Supă de Ciuperci Cremoasă.....20lei </p>
+              <p>Supă de Pește Bouillabaisse.....18lei </p>
+              <p> Supă cremă de brocoli.....21lei </p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-3">
+          <div class="card">
+            <img src="burger.jpg" class="card-img-top"
+              alt="un burger mare cu chifle crocante, pe o farfurie de piatră albă cu un perete negru în spate">
+            <div class="card-body">
+              <h3 class="card-title">Feluri principale</h3>
+              <p class="card-text">Shaorma turcească.....20lei</p>
+              <p>Pește la grătar (pâstrăv/șalău/somon) cu cartofi gratinați.....47lei...350g</p>
+              <p>Pizza diavola.....36lei (8 feli)</p>
+              <p>Orez cu legume și pui chinezesc.....40lei</p>
+              <p>Cartofi la cuptor cu vită și ceapă caramelizată.....56lei</p>
+              <p>Burger clasic.....35lei</p>
+              <p>Lipie cu falafel.....24lei</p>
+              <P>Omletă cu cașcaval.....30lei</P>
+              <p>Burger vegetarian cu falafel din legume coapte.....40lei</p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-3">
+          <div class="card">
+            <img src="fluffy.jpg" class="card-img-top"
+              alt="un tort de pancakes cu multe fructe de pădure deasupra și lângă, pe un fundal întunecat">
+            <div class="card-body">
+              <h3 class="card-title">Deserturi</h3>
+              <p class="card-text"> Tort de Pancakes servit cu fructe de pădure....25lei</p>
+              <P>Panna Cotta.....16lei</P>
+              <P> Clătite umplute cu ciocolată și banane.....16lei</P>
+              <P> Éclair cu cremă de vanilie sau ciocolată.....12lei</P>
+              <P> Tartă cu fructe.....16lei</P>
+              <P> Budinca de pâine.....17lei</P>
+              <P> Profiterol cu înghețată.....15lei</P>
+              <P> Tiramisu, rețetă tradițională, italiană.....17lei</P>
+              <P>Carrot cake cu glazură de vanilie.....15lei</P>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h4>Ofertele zilei -><span class="badge bg-secondary">întreabă ospătarul</span></h4>
+ 
+
+  <h2 id="Rezervă acum" class="subtitlu">Rezervă  acum!</h2>
+
+  <div class="rezerva">
+    <div class="instagram">
+      <p>În inima "Apetit", vă oferim o ocazie unică de a vă transforma evenimentul într-o experiență memorabilă. Sala
+        noastră de evenimente este locul ideal pentru a sărbători momente speciale,
+        fie că este vorba de aniversări, nunți, petreceri private sau întâlniri de afaceri.
+
+        Sala noastră de evenimente impresionează prin designul său elegant și amenajarea spațioasă.
+        Oferim o varietate de opțiuni de configurare a mobilierului pentru a se potrivi perfect cu atmosfera dorită
+        pentru
+        evenimentul dumneavoastră. Lumina ambientală caldă și detaliile decorative subliniază eleganța și farmecul
+        spațiului.</p>
+      <p> Experimentați o călătorie culinară de neuitat cu meniul nostru personalizat, adaptat la preferințele și
+        nevoile dumneavoastră specifice.
+        Echipa noastră de bucătari talentați se asigură că fiecare preparat este o operă de artă gastronomică, pregătită
+        cu atenție la detalii și
+        din ingrediente proaspete de cea mai înaltă calitate.
+
+        Personalul nostru dedicat este aici pentru a vă oferi o experiență impecabilă de la început până la sfârșit.
+        Cu un serviciu atent la detalii și o abordare personalizată, ne străduim să depășim așteptările, asigurându-ne
+        că fiecare
+        moment al evenimentului dumneavoastră este perfect gestionat. </p>
+
+      <p>Echipa noastră de specialiști în evenimente vă stă la dispoziție pentru a vă oferi consultanță profesională în
+        planificarea evenimentului dumneavoastră.
+        Suntem aici pentru a vă ajuta să personalizați fiecare aspect, de la meniu și selecția băuturilor până la
+        designul spațiului și organizarea logistică.</p>
+
+      <P> Pentru a rezerva sala noastră de evenimente și a discuta detaliile specifice ale evenimentului dumneavoastră,
+        vă rugăm să ne contactați la adresa de
+        e-mail sau la numărul de telefon afișat pe site-ul nostru.
+
+        La "Apetit", facem din fiecare eveniment o experiență cu adevărat memorabilă. Așteptăm cu nerăbdare să vă
+        găzduim și să contribuim la
+        crearea unor amintiri deosebite pentru dumneavoastră și invitații dumneavoastră.
+
+      </p>
+      <p>Contactați-ne la :</p>
+      <p> <strong>Telefon:</strong> 0768543234--<strong>Email:</strong> apetit.@yahoo.com.--<strong>Fcebook:</strong>
+        Restaurant Apetit-- <strong>Instagram:</strong> @restaurant.apetit--<strong>Adresa principală:</strong> Strada
+        Lalelelor, nr. 6, Cluj-Napoca, jud. Cluj, România</p>
+
+
+      <button type="button" class="btn btn-dark">Rezervă o sală</button>
+
+
+
+    </div>
+  </div>
+
+
+  <div>
+    <img class="imagine-contact" src="locatie-principala.jpg"
+      alt="  o poză dintr-o sală de restaurant, decorată în stil modern, cu pereți negri, la fel ca și canapelele și scaunele și moblă cu accente calde de lemn, fără oameni în fundal ">
+  </div>
+
+
+
+
+
+  <footer>
+    <div class="footer"></div>
+    <ul class="buline">
+      <li> Contact - urmărește-ne pe social media
+        <a href="https://www.instagram.com/" target="_blank"><img src="instagram.svg"
+            alt="o iconiță cu logoul instagramului"> </a>
+        <a href="https://play.google.com/store/apps/details?id=com.facebook.katana&hl=en_US&pli=1" target="_blank"><img
+            src="facebook.svg" alt="o iconită cu logoul facebook-ului"> </a>
+        <a href="https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en_US" target="_blank"><img
+            src="youtube.svg" alt="o iconită cu logoul youtoube-ului"> </a>
+      </li>
+      <li> Rezervări la: 0768543234 </li>
+      <li> Email: apetit.@yahoo.com </li>
+      <li> Copyright © 2015. Toate drepturile rezervate </li>
+    </ul>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
+
+
+
+<!-- !!!!!!!!  github, 
